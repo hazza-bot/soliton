@@ -1,7 +1,7 @@
 # Soliton
 Soliton Capstone Project
 
-please have the following dependecy installed /n
+Please have the following dependecy installed  
 Python  
 Matplotlib  
 Numpy  
