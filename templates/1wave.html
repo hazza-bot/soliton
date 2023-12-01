@@ -1,0 +1,31 @@
+{% include 'nav_bar.html' %}
+
+<h1 align ="center">Single Solitons</h1>
+<style>
+    h1{height: 100px}
+    form{text-align: center;}
+</style>
+<div id = "body"></div>
+<form id = "myform" action = "/get_plot" method = "POST">
+    Value of Amplitude: <input type = "number" step="any" name = "value_a" required/></br>
+    <br>
+
+    <input type = "submit" value = Enter />
+    <input type = "button" onclick = "reset()" value = "Reset"/>
+</form>
+</style>
+
+<script>
+    function reset() {
+      document.getElementById("myForm").reset();
+    }
+    </script>
+<br>
+
+{% if plot_url %}
+<center>
+    <video width="700" height="500" controls>
+        <source src={{plot_url}} type="video/mp4">
+    </video>
+</center>
+{% endif %}

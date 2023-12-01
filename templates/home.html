@@ -1,0 +1,63 @@
+<!doctype html>
+{% include 'nav_bar.html' %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solitons Capstone Project</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                text-align: center;
+            }
+    
+            section {
+                margin: 0 auto;
+                max-width: 800px;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+
+            h1 {
+                margin-bottom: 70px;
+            }
+
+            h2{
+                font-size: 1.5em;
+                text-align: center;
+            }
+    
+            p {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <header>
+            <h1>Solitons Capstone Project</h1>
+        </header>
+    
+        <section>
+            <h2>Solitons and Numerical Methods</h2>
+            <p>Solitons are unique wave phenomena that do not lose energy over time due to their non-linear nature, characterized by the Korteweg–De Vries equation and Nonlinear Schrödinger equations.</p>
+            <p>In this capstone project, various numerical methods were employed to solve for soliton solutions. The split-step Fourier method for the KDV equation faced overflow issues, and the finite difference method via NLSE was stable but required adjustments for proper functioning, leading to a static animation.</p>
+        </section>
+    
+        <section>
+            <h2>Two-Wave Page</h2>
+            <p>Explores the behavior of two solitons potentially superposing on one another. If wave 2 is faster than wave 1, the effect will be demonstrated on screen. An option to examine all 3 waves on the same graph is also provided for better understanding of superposition.</p>
+        </section>
+    
+        <section>
+            <h2>Shallow Water Wave Page</h2>
+            <p>Illustrates the special dispersive effects of solitons, particularly in cases of varying water depth. Apply a sin function to the water depth and add a dispersion term to observe interesting cases with potential applications in simulating water waves in rivers or coastal regions.</p>
+        </section>
+    
+    </body>
+    
+
+</html>

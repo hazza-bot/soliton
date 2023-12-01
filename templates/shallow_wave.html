@@ -1,0 +1,39 @@
+{% include 'nav_bar.html' %}
+
+<h1 align ="center">Shallow Wave Solitons</h1>
+<style>
+    h1{height: 100px}
+    form{text-align: center;}
+</style>
+<div id = "body"></div>
+<form id = "myform" action = "/shallow" method = "POST">
+    <label for="depth">Depth:</label>
+    <input type="text" name="depth" required>
+    <br>
+
+    <label for="amplitude">Amplitude:</label>
+    <input type="text" name="amplitude" required>
+    <br>
+
+    <label for="speed">Speed:</label>
+    <input type="text" name="speed" required>
+    <br>
+
+    <input type="submit" value="Enter">
+</form>
+</style>
+
+<script>
+    function reset() {
+      document.getElementById("myForm").reset();
+    }
+    </script>
+<br>
+
+{% if plot_url %}
+<center>
+    <video width="700" height="500" controls>
+        <source src={{plot_url}} type="video/mp4">
+    </video>
+</center>
+{% endif %}
